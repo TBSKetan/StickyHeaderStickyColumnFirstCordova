@@ -1,20 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Points Table </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+    <table>
+      <thead>
+        <tr>
+        <th>Teams</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>9</th>
+        <th>9</th>
+        <th>Runs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students; index as i">
+          <td>{{student.name}}</td>
+          <td>{{student.inning1}}</td>
+          <td>{{student.inning2}}</td>
+          <td>{{student.inning3}}</td>
+          <td>{{student.inning4}}</td>
+          <td>{{student.inning5}}</td>
+          <td>{{student.inning6}}</td>
+          <td>{{student.inning7}}</td>
+          <td>{{student.inning8}}</td>
+          <td>{{student.inning9}}</td>
+          <td>{{student.Runs}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </ion-content>
