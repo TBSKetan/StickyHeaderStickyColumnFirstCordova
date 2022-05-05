@@ -32,12 +32,14 @@ div {
   height: 200px;
 }
 td,
+
 th {
   border: 1px solid #000;
   width: 100px;
   text-align: center;
   background-color: white;
 }
+/* Table first row or table header */
 th {
   height: 30px;
   background-color: white;
@@ -49,6 +51,7 @@ table {
   width: 100%;
   font-family: "Fraunces", serif;
 }
+/* Table first colum and first */
 td:first-child,
 th:first-child {
   position: sticky;
@@ -58,6 +61,7 @@ th:first-child {
   font-family: "Fraunces", serif;
   background-color: white;
 }
+/* Table last colum and first */
 // td:last-child, th:last-child {
 //   position:sticky;
 //   right:0;
@@ -68,6 +72,7 @@ thead tr th {
   position: sticky;
   top: 0;
 }
+/* Table first column and first row element */
 th:first-child,
 th:last-child {
   z-index: 2;

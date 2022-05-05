@@ -7,6 +7,7 @@
 <ion-content [fullscreen]="true">
   <div>
     <table>
+      <!------------------- HEADER ----------------------->
       <thead>
         <tr>
         <th>Teams</th>
@@ -22,6 +23,7 @@
         <th>Runs</th>
         </tr>
       </thead>
+       <!------------------- BODY ----------------------->
       <tbody>
         <tr *ngFor="let student of students; index as i">
           <td>{{student.name}}</td>
